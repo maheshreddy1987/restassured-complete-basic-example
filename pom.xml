@@ -21,6 +21,8 @@
         <assertj.version>3.27.7</assertj.version>
         <datafaker.version>2.5.4</datafaker.version>
         <owner.version>1.0.12</owner.version>
+        <testng.version>7.11.0</testng.version>
+        <poi.version>5.4.1</poi.version>
         <log4j.version>2.25.3</log4j.version>
         <slf4j.version>2.0.17</slf4j.version>
         <allure.version>2.33.0</allure.version>
@@ -112,6 +114,20 @@
             <groupId>org.aeonbits.owner</groupId>
             <artifactId>owner</artifactId>
             <version>${owner.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>${testng.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>${poi.version}</version>
+            <scope>test</scope>
         </dependency>
 
         <dependency>
