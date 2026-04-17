@@ -133,6 +133,11 @@ In a few cases, there are custom data like:
 
 JUnit 5 Arguments to reduce the amount of code and maintenance for the functional tests on `SimulationsFunctionalTest`
 
+Also contains utility support for:
+
+* payload generation using `HashMap` (`commons/PayloadGenerator`)
+* TestNG `@DataProvider` fed from Excel sheets (`data/provider/ExcelDataProvider`)
+
 #### model
 
 Model and Builder class to
@@ -173,8 +178,10 @@ to easily configure the API URI.
 
 * [RESTAssured](http://rest-assured.io/) library to test REST APIs
 * [JUnit 5](https://junit.org/junit5/) to support the test creation
+* [TestNG](https://testng.org/) to support Excel-based `@DataProvider`
 * [Owner](https://matteobaccan.github.io/owner/) to manage the property files
 * [data-faker](https://www.datafaker.net/) to generate fake data
+* [Apache POI](https://poi.apache.org/) to read `.xlsx` test data
 * [Log4J2](https://logging.apache.org/log4j/2.x/) as the logging strategy
 * [Allure Report](https://docs.qameta.io/allure/) as the testing report strategy
 
